@@ -2,39 +2,359 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Huarendigital Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huarendigital Solutions - Digital Marketing & Design</title>
+  <meta name="description" content="Huarendigital Solutions provides expert digital marketing, ad consultation, and creative content services to help businesses grow online." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body {
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      color: #333;
-      text-align: center;
-      padding: 100px 20px;
+ body {
+  background-color: #fff3e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #3E2723; /* Charcoal brown */
+  padding: 40px 20px;
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tagline {
+  color: #f5d7cc; /* softer cream tone */
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+
+
+    .section, .ads-section222, .huaren-section123 {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #00bfa6;
-    }
-    p {
-      font-size: 18px;
-      color: #666;
-    }
-    .status {
-      margin-top: 40px;
-      padding: 10px 20px;
-      background: #00bfa6;
-      color: #fff;
-      display: inline-block;
-      border-radius: 6px;
+
+    .section h2, .ads-section222 h2, .huaren-section123 h2 {
+      font-size: 28px;
       font-weight: bold;
+      color: #e65100;
+      text-shadow: 1px 1px 1px #ffab91;
     }
+
+    .section p, .ads-section222 p, .huaren-section123 p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .placeholder-img, .gif-placeholder {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+      margin: 25px auto;
+      display: block;
+    }
+
+    footer {
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .huaren-section123 {
+      background: linear-gradient(to right, #fff8f1, #ffe0c3);
+      border: 2px solid #ffb580;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .ads-section222 {
+      background: linear-gradient(to right, #fff4eb, #ffe0cc);
+      border: 2px solid #ffab91;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .product-cta-section {
+      margin: 40px auto;
+      padding: 40px 20px;
+      max-width: 800px;
+      background: #fff8f1;
+      border: 2px dashed #ff7043;
+      border-radius: 16px;
+    }
+
+    .product-cta-section h2 {
+      font-size: 24px;
+      color: #ff5722;
+      margin-bottom: 15px;
+    }
+
+    .product-cta-section a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 25px;
+      font-weight: bold;
+      background: #ff7043;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .product-cta-section a:hover {
+      background: #e64a19;
+    }
+
+    @media (max-width: 768px) {
+      .logo-text {
+        font-size: 24px;
+      }
+      .tagline, .section p, .huaren-section123 p, .ads-section222 p {
+        font-size: 16px;
+      }
+      .section h2, .huaren-section123 h2, .ads-section222 h2 {
+        font-size: 22px;
+      }
+    }
+    
+    .huaren-marketing-box123-orange {
+  background-color: #fff3e0;
+  border: 2px solid #ffb580;
+  border-radius: 20px;
+  padding: 50px 25px;
+  margin: 40px auto;
+  max-width: 960px;
+  box-shadow: 0 0 15px rgba(255, 138, 101, 0.2);
+  text-align: center;
+}
+
+.huaren-heading123 {
+  font-size: 26px;
+  color: #ff7043;
+  margin-bottom: 20px;
+}
+
+.huaren-subtext123 {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Carousel */
+.banner-carousel123-orange {
+  width: 100%;
+  max-width: 880px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin: 35px auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.carousel-track123-orange {
+  display: flex;
+  animation: scrollBanner123 14s linear infinite;
+  width: fit-content;
+}
+
+.carousel-track123-orange img {
+  height: 190px;
+  margin-right: 40px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.carousel-track123-orange img:nth-child(3) {
+  margin-right: 80px;
+}
+
+@keyframes scrollBanner123 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ads-btn123-orange {
+  display: inline-block;
+  background-color: #ff7043;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 12px;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.4);
+  animation: floatBtn123 2s ease-in-out infinite;
+}
+
+.ads-btn123-orange:hover {
+  background-color: #e65100;
+  transform: scale(1.05);
+}
+
+@keyframes floatBtn123 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-track123-orange img {
+    height: 130px;
+    margin-right: 25px;
+  }
+  .huaren-heading123 {
+    font-size: 22px;
+  }
+  .huaren-subtext123 {
+    font-size: 16px;
+  }
+  .ads-btn123-orange {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+}
   </style>
 </head>
 <body>
-  <h1>🚀 Huarendigital Solutions</h1>
-  <p>Your site is now live and hosted on Netlify.</p>
-  <div class="status">Status: Online ✅</div>
+  <header>
+    <div class="logo-wrap">
+      <img src="https://storage.perfectcdn.com/ijhexb/anh64ruy8wn53u8c.jpg" alt="Huarendigital Logo" class="logo-img" />
+      <div class="logo-text">Huarendigital Solutions</div>
+    </div>
+    <div class="tagline">Empowering Brands with Strategy, Ads & Creativity</div>
+  </header>
+
+  <br>
+  
+  <div class="huaren-section123">
+    <h2><i class="fas fa-bolt fa-bounce"></i> Welcome to Huaren Digital Solutions</h2>
+    <p>Your Trusted Partner in Social Media Management & Strategy Guidance</p>
+    <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="Welcome GIF" class="gif-placeholder" />
+
+    <p>At <strong>Huaren Digital Solutions</strong>, we provide secure, strategic, and user-friendly services to help you grow your online presence.</p>
+
+    <h2><i class="fas fa-star fa-bounce"></i> Why Choose Us?</h2>
+    <p>We empower brands and creators to build a powerful digital footprint with tailored social media strategies and personalized guidance.</p>
+    <img src="https://media.giphy.com/media/3o7TKxOh4G6T2C2sJW/giphy.gif" alt="Social Media GIF" class="gif-placeholder" />
+
+    <h2><i class="fas fa-mobile-alt"></i> Social Media Account Guidance</h2>
+    <p>Maintain brand consistency and boost engagement with our expert-led account management tips and operational advice.</p>
+
+    <h2><i class="fas fa-calendar-check"></i> Daily Strategy Planning</h2>
+    <p>From content ideas to posting timing and campaign tips, we guide you in running your channels with ease and effectiveness.</p>
+
+    <h2><i class="fas fa-bullseye"></i> Ad Campaign Setup & Targeting</h2>
+    <p>Feeling lost in ad managers? We help you set up effective campaigns, define goals, and reach your audience efficiently.</p>
+
+    <h2><i class="fas fa-chart-line"></i> Trusted by 500+ Brands</h2>
+    <p>Our clients consistently report increased visibility, engagement, and digital growth with our guidance.</p>
+    <img src="https://media.giphy.com/media/YyKPbc5OOTSQE/giphy.gif" alt="Results GIF" class="gif-placeholder" />
+
+    <h2><i class="fas fa-rocket fa-bounce"></i> Ready to Grow?</h2>
+    <p>Whether you're just starting or scaling up, our team is ready to craft a plan that fits your digital growth goals. Let’s level up together!</p>
+  </div>
+  
+  
+<br>
+  
+  
+  
+ <!-- 🌟 Ads Guide Hub Section - Orangy Themed for Huarendigital -->
+<div class="huaren-marketing-box123-orange">
+  <div class="huaren-inner123">
+    <h2 class="huaren-heading123"><i class="fas fa-bullhorn icon-animate123"></i> Ads Guide Hub</h2>
+    <p class="huaren-subtext123">Want to learn how to advertise on Facebook, Instagram, Google, or TikTok? Our step-by-step Ads Guide makes it simple and beginner-friendly.</p>
+    <p class="huaren-subtext123">Get clear guidance, real examples, and powerful strategies to help you launch your first ad campaign with confidence.</p>
+
+    <!-- 🔁 Banner Carousel -->
+    <div class="banner-carousel123-orange">
+      <div class="carousel-track123-orange">
+        <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="Meta Ads">
+        <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="Google Ads">
+        <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="TikTok Ads">
+        
+        <!-- Duplicate Set -->
+        <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="Meta Ads Duplicate">
+        <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="Google Ads Duplicate">
+        <img src="https://media.giphy.com/media/xUPGcgtKxm3bXHuJjy/giphy.gif" alt="TikTok Ads Duplicate">
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="#" class="ads-btn123-orange">Explore the Ads Guide →</a>
+  </div>
+</div>
+
+  
+  
+  
+  
+  <br>
+  
+  
+  
+  
+  
+  <div class="ads-section222">
+    <h2><i class="fas fa-thumbs-up"></i> Facebook Ads Management</h2>
+    <p>Our team helps you run optimized and compliant Facebook Ads that deliver real results. We create high-converting visuals, set the right target audience, and monitor performance to reduce cost-per-lead and increase conversions.</p>
+
+    <h2><i class="fas fa-globe"></i> Google Ads Strategy</h2>
+    <p>We specialize in Google Search & Display Ads to help your business appear exactly where your customers are searching. From keyword research to ad copywriting, we handle everything to maximize ROI.</p>
+
+    <h2><i class="fas fa-bullhorn"></i> Digital Marketing Services</h2>
+    <p>We help businesses run optimized, policy-compliant Facebook and Google Ads campaigns. Our strategies reduce cost-per-click while driving real traffic and conversions. Whether you're a startup or SME, we tailor solutions to meet your budget and goals.</p>
+    <img src="https://via.placeholder.com/600x300?text=Marketing+Visual" class="placeholder-img" alt="Marketing Example" />
+
+    <h2><i class="fas fa-comments"></i> Ads Consultation & Strategy</h2>
+    <p>Need help understanding Meta Ads Manager or Google Ads? We offer consultation sessions to teach you how to plan, run, and analyze your ads. Our guidance empowers business owners to advertise confidently and independently.</p>
+    <img src="https://via.placeholder.com/600x300?text=Ads+Consultation" class="placeholder-img" alt="Consultation" />
+
+    <h2><i class="fas fa-paint-brush"></i> Social Media Content Enhancement</h2>
+    <p>We provide content direction and design improvement for your brand's Facebook, Instagram, and TikTok. Make your visuals stand out, improve brand consistency, and deliver better engagement across platforms.</p>
+    <img src="https://via.placeholder.com/600x300?text=Social+Media+Content" class="placeholder-img" alt="Content Services" />
+
+    <h2><i class="fas fa-handshake"></i> Why Choose Us?</h2>
+    <p>With years of hands-on experience in both advertising and design, we bring a hybrid approach that’s focused on results. We're not just a service provider — we're your long-term digital partner.</p>
+    <img src="https://via.placeholder.com/600x300?text=Team+Trust" class="placeholder-img" alt="Team" />
+  </div>
+
+  <div class="product-cta-section">
+    <h2><i class="fas fa-tags"></i> Check Out Our Packages & Pricing</h2>
+    <p>Visit our products page for detailed service offerings and affordable plans tailored to your needs.</p>
+    <a href="/products.html">Explore Now</a>
+  </div>
+
+  <div class="section">
+    <h2>📞 Contact & Support</h2>
+    <p>WhatsApp: <a href="https://wa.me/60125498188">+60 12-549 8188</a><br>Email: <a href="mailto:huarendigitalsolutions@gmail.com">huarendigitalsolutions@gmail.com</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Huarendigital Solutions. All rights reserved.
+  </footer>
 </body>
 </html>
