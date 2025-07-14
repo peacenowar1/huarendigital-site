@@ -6,7 +6,7 @@
   <title>Ads Guide | Huarendigital</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-  body {
+body {
   background-color: #fff3e0;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -43,13 +43,29 @@ header {
   margin-top: 5px;
 }
 
+.banner-wrapper888 {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.banner-wrapper888 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .guide-container {
   max-width: 1000px;
   margin: 30px auto;
-  background: #ffffff;
+  background: #fffaf2;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px rgba(239, 108, 0, 0.2);
 }
 
 .guide-title {
@@ -94,18 +110,23 @@ header {
 
 .step {
   margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 152, 0, 0.25);
+  padding: 20px;
 }
 
 .step p {
   font-size: 18px;
-  color: #333;
+  color: #ef6c00;
   line-height: 1.7;
   padding: 0 10px;
+  font-weight: 600;
 }
 
 .step img {
-  width: 300px;
-  max-width: 60%;
+  width: 100%;
+  max-width: 320px;
   height: auto;
   display: block;
   margin: 10px auto;
@@ -117,10 +138,15 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-top: 15px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 152, 0, 0.25);
 }
 
 .image-row img {
-  width: 45%;
+  width: 100%;
   max-width: 300px;
   border-radius: 10px;
 }
@@ -136,34 +162,167 @@ header {
   border-radius: 12px;
 }
 
-/* Responsive */
+.guide-container h1,
+.guide-container h2,
+.guide-container h3,
+.guide-container h4,
+.guide-container h5,
+.guide-container h6,
+.guide-container strong {
+  color: #ef6c00;
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+  .logo-img {
+    height: 40px;
+  }
+
   .logo-text {
     font-size: 24px;
   }
 
+  .tagline {
+    font-size: 15px;
+  }
+
   .guide-title {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .tab-buttons button {
+    font-size: 14px;
+    padding: 10px 16px;
   }
 
   .step p {
     font-size: 16px;
+    padding: 0 5px;
+  }
+
+  .step img {
+    width: 90%;
+    max-width: 350px;
   }
 
   .image-row img {
     width: 80%;
-  }
-
-  .step img {
-    width: 85%;
-    max-width: 350px;
+    max-width: 250px;
   }
 
   .video-wrapper iframe {
     height: 250px;
   }
+
+  .guide-container {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+}
+    
+      /* NAVIGATION BAR */
+.navhr888 {
+  margin-top: 0;
+  padding: 15px 10px;
+  background-color: #4E342E;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 17px;
+  border-bottom: 2px solid #ffb580;
 }
 
+.navhr888 a {
+  color: #ffe0b2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+.navhr888 a:hover,
+.navhr888 a:active {
+  color: #fff3e0;
+  text-decoration: none;
+}
+
+/* FOOTER SECTION */
+.footerhr888 {
+  background-color: #3E2723;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ffccbc;
+}
+
+.footer-links888 {
+  margin-bottom: 8px;
+}
+
+.footer-links888 a {
+  color: #ffccbc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links888 a:hover,
+.footer-links888 a:active {
+  color: #fff8f1;
+  text-decoration: none;
+}
+
+.footer-copy888 {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* COMPANY INFO SECTION */
+.company-infohr888 {
+  background-color: #fff8f1;
+  text-align: center;
+  font-size: 15px;
+  color: #444;
+  padding: 30px 15px;
+  border-top: 2px solid #ffb580;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE - MOBILE */
+@media screen and (max-width: 768px) {
+  .navhr888 {
+    font-size: 15px;
+    gap: 12px;
+    padding: 12px 8px;
+  }
+
+  .company-infohr888 {
+    font-size: 14px;
+    padding: 25px 10px;
+  }
+}
+
+   .whatsapp-footer888 {
+  margin-top: 18px; /* added margin */
+  margin-bottom: 12px;
+}
+
+.whatsapp-footer888 a {
+  color: #25D366;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.whatsapp-footer888 i {
+  margin-right: 6px;
+}
+
+    
 
   </style>
 </head>
@@ -176,6 +335,19 @@ header {
   </div>
   <div class="tagline">Step-by-Step Ads Guide</div>
 </header>
+  
+   <!-- NAVIGATION BAR -->
+<nav class="navhr888">
+  <a href="index.html">Home</a>
+  <a href="ads.html">Ads Guide</a>
+  <a href="products.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="terms.html">Policy</a>
+</nav>
+  
+   <div class="banner-wrapper888">
+    <img src="https://storage.perfectcdn.com/ijhexb/a8hxm1gi8fcr1h1g.gif" alt="Banner GIF">
+  </div>
 
 <div class="guide-container">
   <div class="guide-title"><i class="fas fa-bullhorn"></i> Ads Guide</div>
@@ -305,6 +477,36 @@ header {
     document.getElementById(id).classList.add('active');
   }
 </script>
+  
+  <!-- FOOTER WITH LINKS -->
+<footer class="footerhr888">
+  <div class="footer-links888">
+    <a href="index.html">Home</a>
+    <a href="ads.html">Ads Guide</a>
+    <a href="products.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="terms.html">Policy</a>
+  </div>
+  <div class="whatsapp-footer888">
+  <a href="https://wa.me/60125498188" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+  </a>
+</div>
+
+  <div class="footer-copy888">
+    &copy; 2025 Huarendigital Solutions. All rights reserved.
+  </div>
+</footer>
+
+<!-- COMPANY INFO -->
+<div class="company-infohr888">
+  <p><strong>HR MARKETING</strong></p>
+  <p>SSM: 202503048072</p>
+  <p>Contact: +6012-5498188</p>
+  <p>Email: huarendigitalsolutions@gmail.com</p>
+</div>
+
+  
 
 </body>
 </html>
