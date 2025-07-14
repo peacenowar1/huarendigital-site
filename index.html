@@ -16,12 +16,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-    
+
 body {
   background-color: #fff3e0;
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
   color: #333;
   text-align: center;
 }
@@ -87,7 +85,6 @@ header {
   line-height: 1.7;
 }
 
-/* ✅ GIF & Image Optimization */
 .placeholder-img,
 .gif-placeholder,
 .smm-img888hd {
@@ -158,12 +155,8 @@ footer {
 }
 
 @keyframes scrollBanner123 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .ads-btn123-orange {
@@ -187,15 +180,10 @@ footer {
 }
 
 @keyframes floatBtn123 {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
 
-/* ✅ Full-width hero */
 .smm-hero888hd,
 .smm-hero888hdfull {
   width: 100%;
@@ -260,7 +248,92 @@ footer {
   display: block;
 }
 
-/* ✅ Mobile Responsive */
+/* ✅ NAVBAR */
+.navhr888 {
+  padding: 15px 10px;
+  background-color: #4E342E;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 17px;
+  border-bottom: 2px solid #ffb580;
+}
+
+.navhr888 a {
+  color: #ffe0b2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+.navhr888 a:hover,
+.navhr888 a:active {
+  color: #fff3e0;
+}
+
+/* ✅ FOOTER */
+.footerhr888 {
+  background-color: #3E2723;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ffccbc;
+}
+
+.footer-links888 {
+  margin-bottom: 8px;
+}
+
+.footer-links888 a {
+  color: #ffccbc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links888 a:hover,
+.footer-links888 a:active {
+  color: #fff8f1;
+}
+
+.footer-copy888 {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ✅ COMPANY INFO */
+.company-infohr888 {
+  background-color: #fff8f1;
+  text-align: center;
+  font-size: 15px;
+  color: #444;
+  padding: 30px 15px;
+  border-top: 2px solid #ffb580;
+  line-height: 1.6;
+}
+
+/* ✅ WHATSAPP FOOTER */
+.whatsapp-footer888 {
+  margin: 18px 0 12px;
+}
+
+.whatsapp-footer888 a {
+  color: #25D366;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.whatsapp-footer888 i {
+  margin-right: 6px;
+}
+
+/* ✅ MOBILE STYLES */
 @media screen and (max-width: 768px) {
   .carousel-track123-orange img {
     height: 130px;
@@ -271,8 +344,10 @@ footer {
     font-size: 24px !important;
   }
 
+  .tagline {
+    font-size: 14px !important;
+  }
 
-  .tagline,
   .section p,
   .huaren-section123 p,
   .ads-section222 p {
@@ -316,7 +391,6 @@ footer {
     max-width: 90%;
   }
 
-  /* ✅ Keep smm-hero888hdfull full width, others narrowed */
   .smm-hero888hd,
   .smm-hero888hdfull {
     width: 100% !important;
@@ -334,81 +408,7 @@ footer {
   .logo-img {
     height: 36px;
   }
-}
 
-    /* NAVIGATION BAR */
-.navhr888 {
-  margin-top: 0;
-  padding: 15px 10px;
-  background-color: #4E342E;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  font-size: 17px;
-  border-bottom: 2px solid #ffb580;
-}
-
-.navhr888 a {
-  color: #ffe0b2;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 6px 10px;
-  transition: all 0.3s ease;
-}
-
-.navhr888 a:hover,
-.navhr888 a:active {
-  color: #fff3e0;
-  text-decoration: none;
-}
-
-/* FOOTER SECTION */
-.footerhr888 {
-  background-color: #3E2723;
-  color: #ccc;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  border-top: 1px solid #ffccbc;
-}
-
-.footer-links888 {
-  margin-bottom: 8px;
-}
-
-.footer-links888 a {
-  color: #ffccbc;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer-links888 a:hover,
-.footer-links888 a:active {
-  color: #fff8f1;
-  text-decoration: none;
-}
-
-.footer-copy888 {
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* COMPANY INFO SECTION */
-.company-infohr888 {
-  background-color: #fff8f1;
-  text-align: center;
-  font-size: 15px;
-  color: #444;
-  padding: 30px 15px;
-  border-top: 2px solid #ffb580;
-  line-height: 1.6;
-}
-
-/* RESPONSIVE - MOBILE */
-@media screen and (max-width: 768px) {
   .navhr888 {
     font-size: 15px;
     gap: 12px;
@@ -419,26 +419,7 @@ footer {
     font-size: 14px;
     padding: 25px 10px;
   }
-}
 
-   .whatsapp-footer888 {
-  margin-top: 18px; /* added margin */
-  margin-bottom: 12px;
-}
-
-.whatsapp-footer888 a {
-  color: #25D366;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  display: inline-block;
-}
-
-.whatsapp-footer888 i {
-  margin-right: 6px;
-}
-
-     @media screen and (max-width: 768px) {
   header {
     height: 120px !important;
   }
