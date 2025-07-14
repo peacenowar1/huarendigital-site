@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,123 +5,319 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services & Pricing | Huarendigital</title>
   <style>
-    body {
-      background-color: #fff3e0;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      text-align: center;
-    }
+ /* GENERAL STYLES */
+/* GENERAL STYLES */
+body {
+  background-color: #fff3e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
 
-    header {
-      background-color: #3E2723;
-      padding: 40px 20px;
-    }
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 
-    .logo-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-    }
+.logo-img {
+  height: 50px;
+  border-radius: 8px;
+}
 
-    .logo-img {
-      height: 50px;
-      border-radius: 8px;
-    }
+.logo-text {
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+}
 
-    .logo-text {
-      font-size: 34px;
-      font-weight: bold;
-      color: #fff;
-    }
+.tagline {
+  color: #ffece6;
+  font-size: 18px;
+  margin-top: 5px;
+}
 
-    .tagline {
-      color: #ffece6;
-      font-size: 18px;
-      margin-top: 5px;
-    }
+header {
+  background-color: #3E2723;
+  padding: 40px 20px;
+  box-shadow: 0 0 12px rgba(255, 87, 34, 0.4);
+}
 
-    .product-section {
-      background-color: #fff8f1;
-      border: 2px solid #ffb580;
-      border-radius: 16px;
-      padding: 40px 25px;
-      margin: 40px auto;
-      max-width: 900px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+/* BANNER */
+.banner-wrapper888 {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0;
+}
 
-    .product-section h2 {
-      color: #ef6c00;
-      font-size: 26px;
-      margin-bottom: 15px;
-    }
+.banner-wrapper888 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-    .product-section p {
-      font-size: 17px;
-      line-height: 1.7;
-    }
+/* PRODUCT SECTION */
+.product-title999hd {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ef6c00;
+  text-align: center;
+  margin: 60px auto 30px;
+  text-shadow: 1px 1px 2px #ffcaa6;
+  max-width: 900px;
+  padding: 0 20px;
+}
 
-    .price-tag {
-      font-size: 18px;
-      font-weight: bold;
-      color: #d84315;
-      margin-top: 10px;
-    }
+.product-section {
+  background-color: #fff8f1;
+  border: 2px solid #ffb580;
+  border-radius: 16px;
+  padding: 40px 25px;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 138, 101, 0.4);
+}
 
-    .placeholder-img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      border-radius: 10px;
-      margin: 20px auto;
-      display: block;
-    }
+.product-section h2 {
+  color: #ef6c00;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 1px #ffb580;
+}
 
-    .contact-section {
-      padding: 50px 20px;
-      background-color: #fff3e0;
-      text-align: center;
-    }
+.product-section p {
+  font-size: 17px;
+  line-height: 1.7;
+}
 
-    .contact-section h2 {
-      font-size: 26px;
-      color: #ef6c00;
-    }
+.price-tag {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d84315;
+  margin-top: 10px;
+}
 
-    .contact-section a {
-      color: #ef6c00;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.placeholder-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 0 12px rgba(255, 138, 101, 0.2);
+}
 
-    footer {
-      padding: 30px 20px;
-      font-size: 14px;
-      color: #888;
-    }
+/* TikTok hook GIF specific override */
+img[alt="TikTok Hook"] {
+  max-width: 350px;
+}
+
+/* FULL WIDTH EXCEPTION */
+.smm-hero888hdfull {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* CONTACT + FOOTER */
+.contact-section {
+  padding: 50px 20px;
+  background-color: #fff3e0;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 138, 101, 0.2) inset;
+}
+
+.contact-section h2 {
+  font-size: 26px;
+  color: #ef6c00;
+}
+
+.contact-section a {
+  color: #ef6c00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 28px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebc57;
+  transform: scale(1.05);
+}
+
+/* Add to existing media query */
+@media screen and (max-width: 768px) {
+  .logo-img {
+    height: 36px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 30px 10px;
+  }
+
+  .product-title999hd {
+    font-size: 24px;
+    margin: 40px auto 25px;
+    width: 95%;
+  }
+
+  .product-section {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .placeholder-img {
+    max-width: 90%;
+  }
+
+  img[alt="TikTok Hook"] {
+    max-width: 280px;
+  }
+
+  .product-section p,
+  .product-section .price-tag {
+    font-size: 15px;
+  }
+}
+
+
+  /* NAVIGATION BAR */
+.navhr888 {
+  margin-top: 0;
+  padding: 15px 10px;
+  background-color: #4E342E;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 17px;
+  border-bottom: 2px solid #ffb580;
+}
+
+.navhr888 a {
+  color: #ffe0b2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+.navhr888 a:hover,
+.navhr888 a:active {
+  color: #fff3e0;
+  text-decoration: none;
+}
+
+/* FOOTER SECTION */
+.footerhr888 {
+  background-color: #3E2723;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ffccbc;
+}
+
+.footer-links888 {
+  margin-bottom: 8px;
+}
+
+.footer-links888 a {
+  color: #ffccbc;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links888 a:hover,
+.footer-links888 a:active {
+  color: #fff8f1;
+  text-decoration: none;
+}
+
+.footer-copy888 {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* COMPANY INFO SECTION */
+.company-infohr888 {
+  background-color: #fff8f1;
+  text-align: center;
+  font-size: 15px;
+  color: #444;
+  padding: 30px 15px;
+  border-top: 2px solid #ffb580;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE - MOBILE */
+@media screen and (max-width: 768px) {
+  .navhr888 {
+    font-size: 15px;
+    gap: 12px;
+    padding: 12px 8px;
+  }
+
+  .company-infohr888 {
+    font-size: 14px;
+    padding: 25px 10px;
+  }
+}
+
+   .whatsapp-footer888 {
+  margin-top: 18px; /* added margin */
+  margin-bottom: 12px;
+}
+
+.whatsapp-footer888 a {
+  color: #25D366;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.whatsapp-footer888 i {
+  margin-right: 6px;
+}
+
     
-        .whatsapp-btn {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 14px 28px;
-      margin-top: 20px;
-      border-radius: 10px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease-in-out;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebc57;
-      transform: scale(1.05);
-    }
   </style>
 </head>
 <body>
@@ -136,47 +331,63 @@
     <div class="tagline">Explore Our Strategic Services & Plans</div>
   </header>
 
+    <!-- NAVIGATION BAR -->
+<nav class="navhr888">
+  <a href="index.html">Home</a>
+  <a href="ads.html">Ads Guide</a>
+  <a href="products.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="terms.html">Policy</a>
+</nav>
+  
+    <div class="banner-wrapper888">
+    <img src="https://storage.perfectcdn.com/ijhexb/a8hxm1gi8fcr1h1g.gif" alt="Banner GIF">
+  </div>
+  
+  <div class="product-title999hd">Our Services • Pricing • Add-ons</div>
+
+  
   <!-- Products -->
   <div class="product-section">
     <h2>🚀 Facebook Ads Management</h2>
     <p>Get your ads professionally handled by our team. We optimize targeting, design visuals, and analyze results. You pay the ad spend + handling fee.</p>
     <p class="price-tag">Handling Fee: 30% of Ad Spend (Min RM60)</p>
-    <img src="https://via.placeholder.com/600x300?text=Facebook+Ads" class="placeholder-img" alt="Facebook Ads" />
+    <img src="https://storage.perfectcdn.com/ijhexb/o0pqfnofqshaquqo.gif" class="placeholder-img" alt="Facebook Ads" />
   </div>
 
   <div class="product-section">
     <h2>🌐 Google Ads Strategy</h2>
     <p>From search campaigns to display ads, we ensure every Ringgit counts by optimizing keywords, budgets, and CTR.</p>
     <p class="price-tag">Handling Fee: 30% of Ad Spend (Min RM60)</p>
-    <img src="https://via.placeholder.com/600x300?text=Google+Ads" class="placeholder-img" alt="Google Ads" />
+    <img src="https://storage.perfectcdn.com/ijhexb/7g7lg8x91ysc7nqe.gif" class="placeholder-img" alt="Google Ads" />
   </div>
 
   <div class="product-section">
     <h2>📊 Ads Consultation & Strategy</h2>
     <p>Learn how to manage your own ads with expert guidance. We teach you planning, setup, and analysis via Zoom or face-to-face sessions.</p>
     <p class="price-tag">RM99 / session (45–60 mins)</p>
-    <img src="https://via.placeholder.com/600x300?text=Consultation+Session" class="placeholder-img" alt="Consultation" />
+    <img src="https://storage.perfectcdn.com/ijhexb/4jq2plszlyaryd5r.gif" class="placeholder-img" alt="Consultation" />
   </div>
 
   <div class="product-section">
     <h2>🎨 Social Media Content Enhancement</h2>
     <p>Need help creating posts? We help you improve your Instagram, Facebook or TikTok content with better visuals and brand consistency.</p>
     <p class="price-tag">Starting from RM150 / 5 visuals</p>
-    <img src="https://via.placeholder.com/600x300?text=Content+Design" class="placeholder-img" alt="Social Media" />
+    <img src="https://storage.perfectcdn.com/ijhexb/0933afswrj2803ig.gif" class="placeholder-img" alt="Social Media" />
   </div>
 
   <div class="product-section">
     <h2>📦 Monthly Content & Ad Pack</h2>
     <p>Get both content and ad support! Perfect for small businesses. Includes 8 visuals + ad planning + 2 consultation sessions.</p>
     <p class="price-tag">RM450 / month</p>
-    <img src="https://via.placeholder.com/600x300?text=Monthly+Marketing+Pack" class="placeholder-img" alt="Pack" />
+    <img src="https://storage.perfectcdn.com/ijhexb/0ky0yidkhj2xxz4e.gif" class="placeholder-img" alt="Pack" />
   </div>
 
   <div class="product-section">
     <h2>📈 Custom Strategy Planning</h2>
     <p>Need a roadmap? We build you a 1-month or 3-month strategy plan tailored to your business goals and budget.</p>
     <p class="price-tag">From RM199 / plan</p>
-    <img src="https://via.placeholder.com/600x300?text=Strategy+Plan" class="placeholder-img" alt="Strategy Plan" />
+    <img src="https://storage.perfectcdn.com/ijhexb/6zac9oar6qnjuq2m.gif" class="placeholder-img" alt="Strategy Plan" />
   </div>
 
   <!-- Add-on Products RM2–RM10 -->
@@ -184,35 +395,35 @@
     <h2>💬 Caption Writing (1 Post)</h2>
     <p>Struggling with words? Let us write a catchy caption to match your visual and boost engagement.</p>
     <p class="price-tag">RM4</p>
-    <img src="https://via.placeholder.com/600x300?text=Caption+Writing" class="placeholder-img" alt="Caption Writing" />
+    <img src="https://storage.perfectcdn.com/ijhexb/dk5q2hcjq2gc2rwc.gif" class="placeholder-img" alt="Caption Writing" />
   </div>
 
   <div class="product-section">
     <h2>🏷️ Hashtag Pack (30 tags)</h2>
     <p>Reach more with our niche-focused hashtag bundles for Instagram or TikTok posts.</p>
     <p class="price-tag">RM3</p>
-    <img src="https://via.placeholder.com/600x300?text=Hashtag+Bundle" class="placeholder-img" alt="Hashtag Bundle" />
+    <img src="https://storage.perfectcdn.com/ijhexb/rpfkhuory7ww4swn.gif" class="placeholder-img" alt="Hashtag Bundle" />
   </div>
 
   <div class="product-section">
     <h2>📝 Mini Social Audit</h2>
     <p>Get 3 quick tips to improve your IG/FB profile — great for new or small accounts.</p>
     <p class="price-tag">RM5</p>
-    <img src="https://via.placeholder.com/600x300?text=Mini+Audit" class="placeholder-img" alt="Audit" />
+    <img src="https://storage.perfectcdn.com/ijhexb/w88wbfxckeh7le96.webp" class="placeholder-img" alt="Audit" />
   </div>
 
   <div class="product-section">
     <h2>🎯 TikTok Hook Line</h2>
     <p>We'll craft a punchy opening line to grab attention for your next video.</p>
     <p class="price-tag">RM3</p>
-    <img src="https://via.placeholder.com/600x300?text=Hook+Line" class="placeholder-img" alt="TikTok Hook" />
+    <img src="https://storage.perfectcdn.com/ijhexb/nwosl66c8k50z2h5.gif" class="placeholder-img" alt="TikTok Hook" />
   </div>
 
   <div class="product-section">
     <h2>🎨 Story Template (1 Slide)</h2>
     <p>Custom Canva story template for promos, quotes or announcements.</p>
     <p class="price-tag">RM6</p>
-    <img src="https://via.placeholder.com/600x300?text=Story+Template" class="placeholder-img" alt="Story Template" />
+    <img src="https://storage.perfectcdn.com/ijhexb/bf2ogjfqc2hgsz5m.gif" class="placeholder-img" alt="Story Template" />
   </div>
   
     <div class="product-section" style="background-color: #fff3e0;">
@@ -228,10 +439,35 @@
     <p>Email: <a href="mailto:huarendigitalsolutions@gmail.com">huarendigitalsolutions@gmail.com</a></p>
   </div>
 
-  <!-- Footer -->
-  <footer>
+ <!-- FOOTER WITH LINKS -->
+<footer class="footerhr888">
+  <div class="footer-links888">
+    <a href="index.html">Home</a>
+    <a href="ads.html">Ads Guide</a>
+    <a href="products.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="terms.html">Policy</a>
+  </div>
+  <div class="whatsapp-footer888">
+  <a href="https://wa.me/60125498188" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+  </a>
+</div>
+
+  <div class="footer-copy888">
     &copy; 2025 Huarendigital Solutions. All rights reserved.
-  </footer>
+  </div>
+</footer>
+
+<!-- COMPANY INFO -->
+<div class="company-infohr888">
+  <p><strong>HR MARKETING</strong></p>
+  <p>SSM: 202503048072</p>
+  <p>Contact: +6012-5498188</p>
+  <p>Email: huarendigitalsolutions@gmail.com</p>
+</div>
+
+  
 
 </body>
 </html>
